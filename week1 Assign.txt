@@ -1,0 +1,33 @@
+Week 1 Git Assignment
+  
+1.git init
+
+2. git remote add origin master https://github.com/saimanojsuper/PJP-2.0.git
+
+
+//Creating branches
+3.  git branch Feature
+    git branch Dev
+    git branch QA
+    git branch Production
+    git branch Delivery
+
+//pushing branches to github
+4.  git push origin Feature_branch
+     git push origin Dev
+     git push origin QA
+     git push origin Production
+     git push origin Delivery
+
+5.    git mkdir sai //add folder
+      git rmdir sai //remove folder
+
+6. //commiting files to the repository
+     git add -A
+     git commit -m”......”
+     Git push origin Feature_branch
+
+7. Create pull request from the github Feature branch
+     Change base branch to Dev and then confirm pull request
+
+8. git pull remote_branch local_branch
