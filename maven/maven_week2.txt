@@ -1,0 +1,25 @@
+1.Write shell scripts / batch files to list out all the mvn goals available
+
+To describe the goal details of specific plugin
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-$plugin-plugin\ -Ddetail=true
+
+To use a plugin for specific goal
+mvn plugin-prefix:goal
+Example: mvn dependency:tree
+         mvn compiler:compile  etc..
+
+
+
+2.Write shell scripts / batch files to demonstrate leveraging local copy of maven within the project; and a readme.md on how this is beneficial?
+
+	mvn -Dmaven.repo.local=$HOME/.my/other/repository clean install
+
+
+3.Write shell scripts / batch files to extract & save the build logs to a file instead of console output
+
+        mvn install > logfile.txt
+
+
+4.Write shell scripts / batch files to prevent maven from downloading dependencies every time /Make maven work without internet
+
+	mvn dependency:go-offline
